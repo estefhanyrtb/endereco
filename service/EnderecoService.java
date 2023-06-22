@@ -43,9 +43,9 @@ public class EnderecoService {
     }
 
     public Endereco buscarEnderecoPorCep(String cep) {
-        return enderecoRepository.findByCidade(cep);
+        return enderecoRepository.findByCep(cep);
     }
     public Endereco buscarEnderecoPorRua(String rua) {
-        return enderecoRepository.findByCidade(rua);
+        return enderecoRepository.findByRua(rua);
     }
 }
